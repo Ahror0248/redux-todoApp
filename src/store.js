@@ -3,4 +3,4 @@ import logger from "redux-logger";
 import todoReducer from "./redux/reducers/todoReducer";
 
 
-export default createStore(null, applyMiddleware(logger))
+export default createStore(todoReducer, applyMiddleware(logger))
